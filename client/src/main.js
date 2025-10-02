@@ -1,6 +1,7 @@
 import accardions from "./common/Accardion";
 import renderBasket from "./Components/basket";
 import cart from "./Components/cart";
+import detailPage from "./Components/detail";
 import { categoryRender, popularProducts, sorting, tagRender } from "./Components/filter";
 import productsRender from "./Components/products";
 import subtotal from "./Components/total";
@@ -23,4 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
   cart()
   renderBasket()
   subtotal()
+  detailPage()
 });
