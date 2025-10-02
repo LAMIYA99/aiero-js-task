@@ -4,6 +4,7 @@ import cart from "./Components/cart";
 import detailPage from "./Components/detail";
 import { categoryRender, popularProducts, sorting, tagRender } from "./Components/filter";
 import productsRender from "./Components/products";
+import projects from "./Components/projects";
 import subtotal from "./Components/total";
 
 var swiper = new Swiper(".mySwiper", {
@@ -25,4 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderBasket()
   subtotal()
   detailPage()
+  projects()
 });
