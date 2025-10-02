@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+
+@theme{
+  --font-mano:"Manrope", sans-serif;
+  --font-sora:"Sora", sans-serif;
+}
+
+
+.skew-top {
+  -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.countWhite {
+  color: #02010100;
+  font-family: "Manrope Alt", Sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #502092;
+  stroke: #fff;
+  line-height: 1em;
+}
+.count {
+  color: #02010100;
+  font-family: "Manrope Alt", Sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #141976;
+  stroke: #fff;
+  line-height: 1em;
+}
+.countWh {
+  color: #02010100;
+  font-family: "Manrope Alt", Sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  stroke: #fff;
+  line-height: 1em;
+}
+ 
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+
+.coutWhite {
+  color: #02010100;
+  font-family: "Manrope Alt", Sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  stroke: #fff;
+  line-height: 1em;
+}
