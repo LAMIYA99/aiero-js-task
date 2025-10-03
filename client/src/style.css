@@ -93,6 +93,43 @@
   stroke: #fff;
   line-height: 1em;
 }
+
+.noUi-target {
+  background: #ddd;
+  border: none;
+  box-shadow: none;
+  height: 6px;
+  border-radius: 10px;
+}
+
+.noUi-connect {
+  background: #8258C7;
+  height: 6px;
+  border-radius: 10px;
+}
+
+.noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #8258C7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  top: -7px;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  right: -17px;
+  top: -6px;
+}
 .countpurple {
   color: #02010100;
   font-family: "Manrope Alt", Sans-serif;
