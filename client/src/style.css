@@ -93,3 +93,8 @@
   stroke: #fff;
   line-height: 1em;
 }
+
+
+.grayscale-map iframe {
+  filter: grayscale(100%) contrast(110%);
+}
