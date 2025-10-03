@@ -1,4 +1,5 @@
 import accardions from "./common/Accardion";
+import priceRange from "./common/price";
 import renderBasket from "./Components/basket";
 import cart from "./Components/cart";
 import { categoryRender, popularProducts, sorting, tagRender } from "./Components/filter";
@@ -23,4 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
   cart()
   renderBasket()
   subtotal()
+  priceRange()
 });
