@@ -111,3 +111,14 @@
 .grayscale-map iframe {
   filter: grayscale(100%) contrast(110%);
 }
+.countfive {
+  color: #02010100;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #502092;
+  stroke: #fff;
+  line-height: 1em;
+}
