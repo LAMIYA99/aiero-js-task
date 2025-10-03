@@ -16,7 +16,111 @@
   </head>
 
   <body>
+      <div
+      class="loading fixed w-full h-full bg-white z-[99999] flex items-center justify-center"
+    >
+      <div>
+        <img
+          src="https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/themes/aiero/img/page-loader.png"
+          alt=""
+          class="heart-pulse "
+        />
+      </div>
+    </div>
+        <div class="scrollUp fixed bottom-[62px] right-[57px] z-[9999] hidden">
+      <div
+        id="scrollBtn"
+        class="w-[50px] h-[73px] text-[#111111] bg-[#46D0BD] hover:bg-[#46D0BD] duration-300 cursor-pointer rounded-[30px] flex items-center justify-center"
+      >
+        <i class="ri-arrow-up-s-line text-[20px] font-bold"></i>
+      </div>
+    </div>
+    <div
+      id="contactModals"
+      class="contactModal fixed h-full w-full z-[9999] bg-[#0000004d] top-0 left-0 hidden transition-all duration-300 ease-in-out opacity-0 scale-95"
+    >
+      <div
+        class="absolute top-5 left-5 bg-[#1F1F1F] w-[400px] h-[1050px] rounded-[25px]"
+      >
+        <div
+          class="py-[68px] px-[62px] relative h-full w-full flex items-start flex-col justify-between overflow-hidden"
+        >
+          <div class="logo pb-[20px]">
+            <img
+              src="https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/11/logo-dark.png"
+              alt=""
+              class="w-[109px] h-[20px]"
+            />
+          </div>
+          <div class="py-[50px]">
+            <h2
+              class="text-[12px] font-bold uppercase leading-[1.5555em] my-[1.3888em] text-white font-manrope"
+            >
+              Contacts
+            </h2>
+            <h3
+              class="text-[18px] leading-[1.5555em] my-[1.3888em] font-manrope text-white font-semibold"
+            >
+              USA, New York - 1060 <br />
+              Str. First Avenue 1
+            </h3>
+            <h4
+              class="text-[18px] leading-[1.5555em] my-[1.3888em] font-manrope text-white font-semibold"
+            >
+              800 100 975 20 34 <br />
+              + (123) 1800-234-5678
+            </h4>
+            <h5
+              class="text-[18px] leading-[1.5555em] my-[1.3888em] font-manrope text-white font-medium"
+            >
+              neuros@mail.co
+            </h5>
+
+            <div class="actions">
+              <ul class="flex gap-6 items-center">
+            
+                <li
+                  class="relative inline-block cursor-pointer border border-[#44BAE2] hover:text-white duration-300 rounded-[999px] p-[2px] bg-transparent  hover:bg-[linear-gradient(262deg,_#44BAE2_14.51%,_#45CCC4_95.96%)] hover:[background:linear-gradient(262deg,_#44BAE2_14.51%,_#45CCC4_95.96%)]"
+                >
+                  <span
+                    class="block rounded-[999px] font-mano text-white bg-transparent hover:bg-transparent transition-colors duration-300 font-semibold min-w-[158px] px-[18px] py-[15px] text-center"
+                  >
+                    Get in touch
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="flex items-start gap-[40px] text-[#ffffff] text-[20px]">
+            <li><i class="ri-facebook-fill"></i></li>
+            <li><i class="ri-twitter-x-line"></i></li>
+            <li><i class="ri-linkedin-fill"></i></li>
+            <li><i class="ri-youtube-line"></i></li>
+          </ul>
+          <div
+            class="absolute bottom-0 left-0 overflow-hidden bg-no-repeat bg-cover bg-center w-[399px] h-[300px]"
+            style="
+              background-image: url(https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/sidepanel-bg.png);
+            "
+          ></div>
+        </div>
+        <div
+          class="absolute bg-no-repeat bg-cover bg-center w-[68px] h-full rounded-[25px] top-0 left-[101%] flex items-start justify-center"
+          style="
+            background-image: url(https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/sidepanel-close-bg-min.jpg);
+          "
+        >
+          <div
+            class="py-[28px] text-[#ffffff] text-[17px] font-normal font-manrope"
+          >
+            <i class="ri-close-line text-[22px] cursor-pointer"></i>
+            <p class="vertical-text">Close</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <header
+      id="mainHeader"
       class="mx-auto px-[20px] sticky top-0 left-[20px] right-[20px] pt-[20px] bg-[#ECF0F4] z-[999]"
     >
       <nav
@@ -690,12 +794,12 @@
       </div>
     </section>
 
-    <section class="relative overflow-hidden mx-auto px-4  sm:px-6">
+    <section class="relative overflow-hidden mx-auto px-4 sm:px-6">
       <div
         class="relative bg-[#1F1F1F] rounded-[28px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
         style="clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%)"
       >
-        <div class="grid grid-cols-12 gap-10  items-center">
+        <div class="grid grid-cols-12 gap-10 items-center">
           <div class="col-span-12 lg:col-span-5 flex justify-center">
             <img
               src="https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2025/02/3d-woman-shape-glowing.jpg"
@@ -708,41 +812,62 @@
             <div
               class="pointer-events-none text-start leading-30 font-mano flex flex-col"
             >
-             <span class="neural text-start flex items-start "><svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="rgb(130, 88, 200)" />
-                  <stop offset="100%" stop-color="rgb(44, 132, 200)" />
-                </linearGradient>
-              </defs>
-              <text x="0" y="180" 
-                    font-family="Manrope Alt, sans-serif" 
-                    font-size="150" 
-                    font-weight="800" 
+              <span class="neural text-start flex items-start"
+                ><svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient
+                      id="textGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop offset="0%" stop-color="rgb(130, 88, 200)" />
+                      <stop offset="100%" stop-color="rgb(44, 132, 200)" />
+                    </linearGradient>
+                  </defs>
+                  <text
+                    x="0"
+                    y="180"
+                    font-family="Manrope Alt, sans-serif"
+                    font-size="150"
+                    font-weight="800"
                     fill="transparent"
-                    stroke="url(#textGradient)" 
-                    stroke-width="1">
-                Neural
-              </text>
-            </svg></span>
-             <span class="neural text-start flex items-start "><svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="rgb(130, 88, 200)" />
-                  <stop offset="100%" stop-color="rgb(44, 132, 200)" />
-                </linearGradient>
-              </defs>
-              <text x="0" y="130" 
-                    font-family="Manrope Alt, sans-serif" 
-                    font-size="150" 
-                    font-weight="800" 
+                    stroke="url(#textGradient)"
+                    stroke-width="1"
+                  >
+                    Neural
+                  </text>
+                </svg></span
+              >
+              <span class="neural text-start flex items-start"
+                ><svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient
+                      id="textGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop offset="0%" stop-color="rgb(130, 88, 200)" />
+                      <stop offset="100%" stop-color="rgb(44, 132, 200)" />
+                    </linearGradient>
+                  </defs>
+                  <text
+                    x="0"
+                    y="130"
+                    font-family="Manrope Alt, sans-serif"
+                    font-size="150"
+                    font-weight="800"
                     fill="transparent"
-                    stroke="url(#textGradient)" 
-                    stroke-width="1">
-          Networks
-              </text>
-            </svg></span>
-            
+                    stroke="url(#textGradient)"
+                    stroke-width="1"
+                  >
+                    Networks
+                  </text>
+                </svg></span
+              >
             </div>
 
             <p class="text-[14px] tracking-widest text-white">[ about ]</p>
@@ -3016,8 +3141,6 @@
       </div>
     </section>
 
-
-    
     <footer class="mx-auto px-[20px] bg-[#FFFFFF] mb-[20px]">
       <div class="bg-[#1F1F1F] rounded-[25px]">
         <div class="top pt-[51px] pb-[105px] px-[10px] max-w-[1440px] mx-auto">
@@ -3224,9 +3347,9 @@
               </ul>
             </div>
           </div>
-          <div class="bg-[#CBCBCB]  w-full p-[0.5px] mt-16"></div>
+          <div class="bg-[#CBCBCB] w-full p-[0.5px] mt-16"></div>
           <div class="grid grid-cols-12 pt-[63px] items-center">
-            <div class="col-span-8 pt-[29px] ">
+            <div class="col-span-8 pt-[29px]">
               <div class="logo w-[110px] h-auto mb-[1.3125rem]">
                 <img
                   src="https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/11/logo-dark.png"
@@ -3236,7 +3359,9 @@
               </div>
               <div class="">
                 <ul class="flex gap-6">
-                  <li class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center">
+                  <li
+                    class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center"
+                  >
                     <a href="https://www.facebook.com/" class="text-white">
                       <svg
                         class="w-6 h-6 fill-current"
@@ -3249,8 +3374,10 @@
                       </svg>
                     </a>
                   </li>
-              
-                  <li class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center">
+
+                  <li
+                    class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center"
+                  >
                     <a href="https://twitter.com/" class="text-white">
                       <svg
                         class="w-6 h-6 fill-current"
@@ -3263,8 +3390,10 @@
                       </svg>
                     </a>
                   </li>
-              
-                  <li class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center">
+
+                  <li
+                    class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center"
+                  >
                     <a href="https://www.linkedin.com/" class="text-white">
                       <svg
                         class="w-6 h-6 fill-current"
@@ -3277,8 +3406,10 @@
                       </svg>
                     </a>
                   </li>
-              
-                  <li class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center">
+
+                  <li
+                    class="bg-white/0 w-10 h-10 rounded-full flex items-center justify-center"
+                  >
                     <a href="https://www.youtube.com/" class="text-white">
                       <svg
                         class="w-6 h-6 fill-current"
@@ -3293,7 +3424,7 @@
                   </li>
                 </ul>
               </div>
-              
+
               <figure class="wp-block-image size-full mt-20">
                 <img
                   decoding="async"
