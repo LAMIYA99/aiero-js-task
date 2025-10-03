@@ -1,4 +1,5 @@
 import accardions from "./common/Accardion";
+import priceRange from "./common/price";
 import renderBasket from "./Components/basket";
 import cart from "./Components/cart";
 import detailPage from "./Components/detail";
@@ -27,4 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
   subtotal()
   detailPage()
   projects()
+  priceRange()
 });
