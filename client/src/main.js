@@ -6,10 +6,12 @@ import scrollAction from "./common/scroll";
 import toTopScroll from "./common/toTop";
 import renderBasket from "./Components/basket";
 import cart from "./Components/cart";
+import checkout from "./Components/checkout";
 import detailPage from "./Components/detail";
 import { categoryRender, popularProducts, sorting, tagRender } from "./Components/filter";
 import productsRender from "./Components/products";
 import projects from "./Components/projects";
+import renderCart from "./Components/renderCart";
 import subtotal from "./Components/total";
 
 
@@ -37,4 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
   openModals()
   scrollAction()
   loadingScreen()
+  checkout()
+  renderCart()
 });
