@@ -1,4 +1,3 @@
-
 import HttpServices from "../Api/Axios";
 import { addToCart } from "../Provider/addtocart";
 
@@ -201,7 +200,7 @@ const detailPage = () => {
             </div>
           </div>`;
 
-    DETAIL_WRAPPER.innerHTML = renderHtml;
+    DETAIL_WRAPPER && (DETAIL_WRAPPER.innerHTML = renderHtml);
     if (PRODUCT_NAME) PRODUCT_NAME.innerText = product.title || "";
 
     const decreaseBtn = document.querySelector("#decreaseBtn");
@@ -209,22 +208,25 @@ const detailPage = () => {
     const quantityInput = document.querySelector("#quantityInput");
     const addToCartBtn = document.querySelector("#addToCartBtn");
 
-    decreaseBtn.addEventListener("click", () => {
-      if (quantity > 1) {
-        quantity--;
+    decreaseBtn &&
+      decreaseBtn.addEventListener("click", () => {
+        if (quantity > 1) {
+          quantity--;
+          quantityInput.value = quantity;
+        }
+      });
+
+    increaseBtn &&
+      increaseBtn.addEventListener("click", () => {
+        quantity++;
         quantityInput.value = quantity;
-      }
-    });
+      });
 
-    increaseBtn.addEventListener("click", () => {
-      quantity++;
-      quantityInput.value = quantity;
-    });
-
-    addToCartBtn.addEventListener("click", () => {
-      const productWithQty = { ...product, qty: quantity };
-      addToCart(productWithQty);
-    });
+    addToCartBtn &&
+      addToCartBtn.addEventListener("click", () => {
+        const productWithQty = { ...product, qty: quantity };
+        addToCart(productWithQty);
+      });
   });
 };
 

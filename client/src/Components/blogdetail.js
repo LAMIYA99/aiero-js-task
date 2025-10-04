@@ -1,6 +1,5 @@
 import HttpServices from "../Api/Axios";
 
-
 const BLOG_DETAIL_WRAPPER = document.querySelector("#blogDetailWrapper");
 
 const blogDetail = () => {
@@ -9,25 +8,25 @@ const blogDetail = () => {
 
   api.getData(`/posts?filters[id]=${id}&populate=*`).then((res) => {
     const posts = res?.data?.[0];
-    console.log(posts)
+    console.log(posts);
     if (!posts) return;
 
     let renderHtml = `  
-                 <a href="./blogdetail.html?id=${posts?.id}"> 
-            <div class="relative">
-                <img
-                   src="http://localhost:1337${posts?.image?.url}"
-                  alt="Blog post cover"
-                  class="w-full h-[474px] object-cover rounded-t-[20px]"
-                />
+              <a href="./blogdetail.html?id=${posts?.id}">
+      <div class="relative">
+        <img
+   src="http://localhost:1337${posts?.image?.url}"
+          alt="Blog post cover"
+          class="w-full h-[474px] object-cover rounded-t-[20px]"
+        />
 
-                <div
-                  class="absolute bottom-0 left-10 pt-[20px] pr-[24px] pb-[4px] pl-[24px] text-center rounded-t-[25px] bg-[#FFFFFF] text-sm px-3 py-1"
-                >
-                  2 Jan 2025 / andrew
-                </div>
-              </div>
-        </a>`;
+        <div
+          class="absolute bottom-0 left-10 pt-[20px] pr-[24px] pb-[4px] pl-[24px] text-center rounded-t-[25px] bg-[#FFFFFF] text-sm px-3 py-1"
+        >
+          2 Jan 2025 / andrew
+        </div>
+      </div>
+    </a>`;
 
     BLOG_DETAIL_WRAPPER && (BLOG_DETAIL_WRAPPER.innerHTML = renderHtml);
   });
