@@ -12,15 +12,16 @@ const openModals = () => {
     });
   });
 
-  CLOSE_MODAL.addEventListener("click", () => {
-    MODAL_DISPLAY.classList.remove("opacity-100", "scale-100");
-    MODAL_DISPLAY.classList.add("opacity-0", "scale-95");
+  CLOSE_MODAL &&
+    CLOSE_MODAL.addEventListener("click", () => {
+      MODAL_DISPLAY.classList.remove("opacity-100", "scale-100");
+      MODAL_DISPLAY.classList.add("opacity-0", "scale-95");
 
-    setTimeout(() => {
-      MODAL_DISPLAY.classList.remove("flex");
-      MODAL_DISPLAY.classList.add("hidden");
-    }, 300);
-  });
+      setTimeout(() => {
+        MODAL_DISPLAY.classList.remove("flex");
+        MODAL_DISPLAY.classList.add("hidden");
+      }, 300);
+    });
 };
 
 export default openModals;

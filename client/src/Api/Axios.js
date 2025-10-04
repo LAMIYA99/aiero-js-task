@@ -15,6 +15,7 @@ class HttpServices {
       console.log(error);
     }
   }
+  async postData(url, data) {}
 }
 
 export default HttpServices;
