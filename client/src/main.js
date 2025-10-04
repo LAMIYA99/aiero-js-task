@@ -5,6 +5,7 @@ import priceRange from "./common/price";
 import scrollAction from "./common/scroll";
 import toTopScroll from "./common/toTop";
 import renderBasket from "./Components/basket";
+import blog from "./Components/blog";
 import cart from "./Components/cart";
 import checkout from "./Components/checkout";
 import detailPage from "./Components/detail";
@@ -41,4 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loadingScreen()
   checkout()
   renderCart()
+  blog()
 });
