@@ -2,6 +2,7 @@ import accardions from "./common/Accardion";
 import loadingScreen from "./common/loading";
 import openModals from "./common/modal";
 import priceRange from "./common/price";
+
 import scrollAction from "./common/scroll";
 import toTopScroll from "./common/toTop";
 import renderBasket from "./Components/basket";
@@ -36,11 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
   subtotal()
   detailPage()
   projects()
-  priceRange()
   openModals()
   scrollAction()
   loadingScreen()
   checkout()
   renderCart()
   blog()
+  priceRange()
 });
